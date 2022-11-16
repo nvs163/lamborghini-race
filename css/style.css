@@ -7,7 +7,7 @@ body {
   font-family: 'Roboto Condensed', Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14;
+  font-size: 14px;
   line-height: 1.2;
   color: #040404;
 }
@@ -164,6 +164,10 @@ body {
   margin-bottom: 30px;
 }
 
+.team__img {
+  max-height: 302px;
+}
+
 .schedule {
   padding-top: 66px;
 }
@@ -183,20 +187,49 @@ body {
 }
 
 .schedule__table {
-  display: grid;
   padding-top: 20px;
   padding-bottom: 20px;
-
-  gap: 20px;
-
-  border-top: 1px solid #040404;
+  position: relative;
+  top: 20px;
+  
   border-bottom: 1px solid #040404;
 }
 
-.schedule__tr:not(:last-child) {
-  margin-bottom: 20px;
+.schedule__table::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: -20px;
+  border-top: 1px solid #040404;
+}
+
+.schedule__td {
+  padding-bottom: 20px;
 }
 
 .track {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-image: url(../images/bg-track.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.track__inner {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   padding-top: 47px;
+}
+
+.track__info {
+  max-width: 435px;
+}
+
+.track__img {
+  margin-top: auto;
+  max-width: 735px;
+  align-self: center;
+  margin-bottom: 100px;
 }
