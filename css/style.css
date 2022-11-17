@@ -244,23 +244,49 @@ body {
 }
 
 .evo-black__inner {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   padding-top: 100px;
   padding-bottom: 50px;
+  position: relative;
 }
 
-.evo__description {
-  flex-basis: 437px;
+.evo-black__inner::before {
+  content: '';
+  width: 185px;
+  height: 212px;
+  position: absolute;
+  top: 50%;
+  left: -140px;
+
+  transform: translateY(-50%);
+
+  background-image: url(../images/polygon.svg);
+  background-repeat: no-repeat;
+}
+
+.evo-black__inner::after {
+  content: '';
+  width: 497px;
+  height: 571px;
+  position: absolute;
+  bottom: -96px;
+  left: -43px;
+
+  background-image: url(../images/polygon-2.svg);
+  background-repeat: no-repeat;
 }
 
 .evo__info {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 200px;
 }
 
 .evo__title {
-  margin-right: 192px;
+  margin-right: 50px;
+}
+
+.evo__description {
+  flex-basis: 437px;
 }
 
 .evo__text {
@@ -268,11 +294,15 @@ body {
 }
 
 .evo__img {
+  display: block;
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
   max-width: 725px;
+
+  position: relative;
+  z-index: 1;
 }
 
 .evo__dl {
@@ -280,7 +310,52 @@ body {
   justify-content: space-between;
 }
 
+.evo__dd {
+  text-transform: uppercase;
+}
+
+.evo-white__inner {
+  padding-top: 125px;
+  position: relative;
+}
+
+.evo-white__inner::before {
+  content: '';
+  width: 274px;
+  height: 257px;
+  position: absolute;
+  top: -20px;
+  left: 360px;
+
+  background-image: url(../images/evo-1.png);
+  background-repeat: no-repeat;
+}
+
+.evo-white__inner::after {
+  content: '';
+  width: 324px;
+  height: 311px;
+  position: absolute;
+  top: 121px;
+  left: 590px;
+
+  background-image: url(../images/evo-2.png);
+  background-repeat: no-repeat;
+}
+
 .evo-white__text {
+  max-width: 590px;
+}
+
+.evo-white__text--sm {
+  max-width: 285px;
+}
+
+.evo-white__text--md {
+  max-width: 437px;
+}
+
+.evo-white__text:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -292,7 +367,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 263px;
+  height: 264px;
 
   background-image: url(../images/video.png);
   background-repeat: no-repeat;
