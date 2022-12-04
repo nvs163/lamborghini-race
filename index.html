@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
@@ -17,7 +18,7 @@
 
   <div class="wrapper">
 
-    <div class="header">
+    <header class="header">
       <div class="container__header">
 
         <nav class="nav">
@@ -53,8 +54,12 @@
           </ul>
 
         </nav>
+
+        <div class="burger">
+          <span class="burger__line"></span>
+        </div>
       </div>
-    </div>
+    </header>
 
     <main class="main">
 
@@ -279,34 +284,62 @@
         <div class="container">
           <h2 class="section__title blog__title">Блог</h2>
 
-          <div class="blog__inner">
+          
 
-            <div class="blog__item">
-              <a href="#" class="blog-post__link">
-                <img src="./images/win.jpg" alt="win" class="blog-post__img">
-              </a>
-              <h3 class="blog-post__title">
-                НЕЛЬСОН ПИКЕ СТАЛ ПОБЕДИТЕЛЕМ ГРАНД-ФИНАЛА В ПОРТИМАНЕ
-              </h3>
-              <p class="blog-post__desc">
-                Нельсон Пике-младший из Ansa Motorsports обеспечил возвращение титула Lamborghini Super Trofeo Grand Finals в Северную Америку впервые с 2017 года после победы и второе место в паре 50-минутных гонок на Autodromo Nacionale do Algarve в Портимане.Между тем, титул Pro-Am был подорван, поскольку Брайан Ортис и Себастьян Карасо из Precision Performance Motorsports стали первым полностью пуэрто-риканским составом, выигравшим Гранд-финал, сделав это драматично после того, как сравнялись по очкам с Брайсон Лью и Джон Дубетс.Анджей Левандовски из VS Racing одержал свою вторую победу в Гранд-финале, добавив титул Am к своему успеху Pro-Am, которого он добился с Каролем Башем в 2019 году, в то время как бельгийские братья и сестры Бенуа и Франсуа Семулен завоевали корону Кубка Lamborghini для Semspeed.Победитель Гранд-финала в категории Pro Нельсон Пике-младший (#130 Ansa Motorsports) сказал: « Выиграть титул удивительно, но это определенно была непростая гонка. Я попросил своего инженера еще немного стравить давление в шинах на пит-стопе, но этого оказалось недостаточно, поэтому на втором отрезке у меня были проблемы. Я видел, как приближается Дэнни [Формал] [Wayne Taylor Racing] и немного волновался, потому что он мог что-то попробовать, потому что ему было нечего терять. Я знал, что этой секунды было бы достаточно, чтобы выиграть титул, но всегда хочется сделать это, выиграв гонку».
-              </p>
-              <a href="#" class="blog-post__more">Читать подробнее...</a>
+          <div class="blog__slider swiper">
+            <div class="navigation">
+              <div class="blog__button swiper-button-left">
+                <img src="./images/arrow-left.svg" alt="" class="navigation-arrow navigation-arrow--left">
+              </div>
+              <div class="blog__button swiper-button-right">
+                <img src="./images/arrow-right.svg" alt="" class="navigation-arrow navigation-arrow--right">
+              </div>
             </div>
 
-            <div class="blog__item">
-              <a href="#" class="blog-post__link">
-                <img src="./images/car.jpg" alt="car" class="blog-post__img">
-              </a>
-              <h3 class="blog-post__title">
-                ГРАНД ФИНАЛ. ДЕНЬ 1
-              </h3>
-              <p class="blog-post__desc">
-                Утренний дождь означал, что мокрая гонка была объявлена ​​до старта, и перед большинством экипажей стоял выбор: использовать слики или мокрые шины. Большинство участников предпочли мокрую трассу, но поулист Спинелли начал гонку на сликах и сразу же поплатился за это. Huracan № 61 опустился вниз, заняв всего 28-е место, поскольку Бондуэль опередил бегунов Pro-Am Кароля Баша (Micanek Motorsport) и Льюиса Уильямсона (Oregon Team).Вскоре Уильямсон опередил Баса, заняв первое место в Pro-Am и заняв второе место в общем зачете, но гонщик команды Орегона не был доволен тем, что остался на этом месте, поскольку он отнимал у Бондюэля часть времени впереди. Вскоре Уильямсон оказался позади Бондюэля и сделал решающий рывок на восьмом повороте, чтобы захватить лидерство на седьмом круге. Таков был темп машины под номером 27, Уильямсон построил трехсекундный отрыв и удерживал лидерство до пит-стопов.Бондуэль, который боролся с высоким давлением в шинах на первом отрезке, перешел на слики на пит-стопах и снова вышел в лидеры после того, как обогнал Бромека Форманека, в то время как автомобиль Target Racing из Milan Teekens оспаривал третье место с машиной Iron Dames. Дориан Пин. Пин № 83 поднялся на второе место перед Тикенсом после остановок, но в конце гонки попал под давление со стороны Тикенса. Teekens обогнал Пина на последних кругах и финишировал вторым после вращения Форманека за два круга до финиша, в то время как Пин также развернулся на последнем круге и занял пятое место в общем зачете.Получив прибыль от вращения Форманека, Сиглия и Уильямсон финишировали третьими в общем зачете и первыми в Pro-Am, завоевав титул на гонку раньше. Бенуа Семулен и Франсуа Семулен выиграли в классе Lamborghini Cup, опередив Ван дер Хорста и Ханса Фабри, а Левандовски одержал победу в классе Am.
-              </p>
-              <a href="#" class="blog-post__more">Читать подробнее...</a>
+            <div class="blog__inner swiper-wrapper">
+              <div class="blog__item swiper-slide">
+                <a href="#" class="blog-post__link">
+                  <img src="./images/win.jpg" alt="win" class="blog-post__img">
+                </a>
+                <h3 class="blog-post__title">
+                  НЕЛЬСОН ПИКЕ СТАЛ ПОБЕДИТЕЛЕМ ГРАНД-ФИНАЛА В ПОРТИМАНЕ
+                </h3>
+                <p class="blog-post__desc">
+                  Нельсон Пике-младший из Ansa Motorsports обеспечил возвращение титула Lamborghini Super Trofeo Grand Finals в Северную Америку впервые с 2017 года после победы и второе место в паре 50-минутных гонок на Autodromo Nacionale do Algarve в Портимане.Между тем, титул Pro-Am был подорван, поскольку Брайан Ортис и Себастьян Карасо из Precision Performance Motorsports стали первым полностью пуэрто-риканским составом, выигравшим Гранд-финал, сделав это драматично после того, как сравнялись по очкам с Брайсон Лью и Джон Дубетс.Анджей Левандовски из VS Racing одержал свою вторую победу в Гранд-финале, добавив титул Am к своему успеху Pro-Am, которого он добился с Каролем Башем в 2019 году, в то время как бельгийские братья и сестры Бенуа и Франсуа Семулен завоевали корону Кубка Lamborghini для Semspeed.Победитель Гранд-финала в категории Pro Нельсон Пике-младший (#130 Ansa Motorsports) сказал: « Выиграть титул удивительно, но это определенно была непростая гонка. Я попросил своего инженера еще немного стравить давление в шинах на пит-стопе, но этого оказалось недостаточно, поэтому на втором отрезке у меня были проблемы. Я видел, как приближается Дэнни [Формал] [Wayne Taylor Racing] и немного волновался, потому что он мог что-то попробовать, потому что ему было нечего терять. Я знал, что этой секунды было бы достаточно, чтобы выиграть титул, но всегда хочется сделать это, выиграв гонку».
+                </p>
+                <a href="#" class="blog-post__more">Читать подробнее...</a>
+              </div>
+
+              <div class="blog__item swiper-slide">
+                <a href="#" class="blog-post__link">
+                  <img src="./images/car.jpg" alt="car" class="blog-post__img">
+                </a>
+                <h3 class="blog-post__title">
+                  ГРАНД ФИНАЛ. ДЕНЬ 1
+                </h3>
+                <p class="blog-post__desc">
+                  Утренний дождь означал, что мокрая гонка была объявлена ​​до старта, и перед большинством экипажей стоял выбор: использовать слики или мокрые шины. Большинство участников предпочли мокрую трассу, но поулист Спинелли начал гонку на сликах и сразу же поплатился за это. Huracan № 61 опустился вниз, заняв всего 28-е место, поскольку Бондуэль опередил бегунов Pro-Am Кароля Баша (Micanek Motorsport) и Льюиса Уильямсона (Oregon Team).Вскоре Уильямсон опередил Баса, заняв первое место в Pro-Am и заняв второе место в общем зачете, но гонщик команды Орегона не был доволен тем, что остался на этом месте, поскольку он отнимал у Бондюэля часть времени впереди. Вскоре Уильямсон оказался позади Бондюэля и сделал решающий рывок на восьмом повороте, чтобы захватить лидерство на седьмом круге. Таков был темп машины под номером 27, Уильямсон построил трехсекундный отрыв и удерживал лидерство до пит-стопов.Бондуэль, который боролся с высоким давлением в шинах на первом отрезке, перешел на слики на пит-стопах и снова вышел в лидеры после того, как обогнал Бромека Форманека, в то время как автомобиль Target Racing из Milan Teekens оспаривал третье место с машиной Iron Dames. Дориан Пин. Пин № 83 поднялся на второе место перед Тикенсом после остановок, но в конце гонки попал под давление со стороны Тикенса. Teekens обогнал Пина на последних кругах и финишировал вторым после вращения Форманека за два круга до финиша, в то время как Пин также развернулся на последнем круге и занял пятое место в общем зачете.Получив прибыль от вращения Форманека, Сиглия и Уильямсон финишировали третьими в общем зачете и первыми в Pro-Am, завоевав титул на гонку раньше. Бенуа Семулен и Франсуа Семулен выиграли в классе Lamborghini Cup, опередив Ван дер Хорста и Ханса Фабри, а Левандовски одержал победу в классе Am.
+                </p>
+                <a href="#" class="blog-post__more">Читать подробнее...</a>
+              </div>
+
+              <div class="blog__item swiper-slide">
+                
+                <a href="#" class="blog-post__link">
+                  <img src="./images/car.jpg" alt="car" class="blog-post__img">
+                </a>
+                <h3 class="blog-post__title">
+                  ГРАНД ФИНАЛ. ДЕНЬ 1
+                </h3>
+                <p class="blog-post__desc">
+                  Утренний дождь означал, что мокрая гонка была объявлена ​​до старта, и перед большинством экипажей стоял выбор: использовать слики или мокрые шины. Большинство участников предпочли мокрую трассу, но поулист Спинелли начал гонку на сликах и сразу же поплатился за это. Huracan № 61 опустился вниз, заняв всего 28-е место, поскольку Бондуэль опередил бегунов Pro-Am Кароля Баша (Micanek Motorsport) и Льюиса Уильямсона (Oregon Team).Вскоре Уильямсон опередил Баса, заняв первое место в Pro-Am и заняв второе место в общем зачете, но гонщик команды Орегона не был доволен тем, что остался на этом месте, поскольку он отнимал у Бондюэля часть времени впереди. Вскоре Уильямсон оказался позади Бондюэля и сделал решающий рывок на восьмом повороте, чтобы захватить лидерство на седьмом круге. Таков был темп машины под номером 27, Уильямсон построил трехсекундный отрыв и удерживал лидерство до пит-стопов.Бондуэль, который боролся с высоким давлением в шинах на первом отрезке, перешел на слики на пит-стопах и снова вышел в лидеры после того, как обогнал Бромека Форманека, в то время как автомобиль Target Racing из Milan Teekens оспаривал третье место с машиной Iron Dames. Дориан Пин. Пин № 83 поднялся на второе место перед Тикенсом после остановок, но в конце гонки попал под давление со стороны Тикенса. Teekens обогнал Пина на последних кругах и финишировал вторым после вращения Форманека за два круга до финиша, в то время как Пин также развернулся на последнем круге и занял пятое место в общем зачете.Получив прибыль от вращения Форманека, Сиглия и Уильямсон финишировали третьими в общем зачете и первыми в Pro-Am, завоевав титул на гонку раньше. Бенуа Семулен и Франсуа Семулен выиграли в классе Lamborghini Cup, опередив Ван дер Хорста и Ханса Фабри, а Левандовски одержал победу в классе Am.
+                </p>
+                <a href="#" class="blog-post__more">Читать подробнее...</a>
+              </div>
+
             </div>
 
+            
           </div>
         </div>
       </section>
@@ -314,9 +347,9 @@
       <section class="section quotes">
         <div class="container">
           <div class="quotes__inner">
-            <div class="quotes__content">
+            <blockquote class="quotes__content">
 
-              <div class="quotes__item">
+              <cite class="quotes__item">
                 <p class="quotes__title">
                   Чемпион Am
                 </p>
@@ -326,9 +359,9 @@
                 <p class="quotes__text">
                   «Я очень доволен титулом, моей второй победой в Am и четвертой в Super Trofeo, мне очень приятно делать это в этом году, потому что уровень соревнований очень высок. Должен сказать, сегодня было довольно легко, так как я все время контролировал ситуацию».
                 </p>
-              </div>
+              </cite>
 
-              <div class="quotes__item">
+              <cite class="quotes__item">
                 <p class="quotes__title">
                   Обладатель кубка Lamborghini
                 </p>
@@ -338,9 +371,9 @@
                 <p class="quotes__text">
                   «Я очень доволен титулом, моей второй победой в Am и четвертой в Super Trofeo, мне очень приятно делать это в этом году, потому что уровень соревнований очень высок. Должен Обладатель кубка Lamborghini  добавил: «Здорово выиграть титул, спустя четыре года после последнего, а за это время произошло так много всего. Из-за COVID-19, а затем моей тяжелой аварии в Барселоне я не мог так много ездить в последние годы, поэтому я очень доволен своим возвращением. Сегодня утром была тяжелая гонка, но я справился». Cказать, сегодня было довольно легко, так как я все время контролировал ситуацию».
                 </p>
-              </div>
+              </cite>
 
-            </div>
+            </blockquote>
 
             <img src="./images/winner.png" alt="winner" class="quotes__img">
           </div>
@@ -354,44 +387,66 @@
           Контакты
         </h2>
 
-        <div class="footer__inner">
-          <div class="footer__info">
-            <div class="footer__general">
-              <h3 class="footer__subtitle">Общие</h3>
-              <a href="tel:351282405600" class="footer__phone footer__contacts-link">+(351) 282 405 600</a>
-              <a href="tel:351282405697" class="footer__phone footer__contacts-link">+(351) 282 405 697</a>
-              <a href="mailto:info@autodromodoalgarve.com" class="footer__email footer__contacts-link">info@autodromodoalgarve.com</a>
-            </div>
+        <div class="footer__top">
+          <ul class="footer__info">
+            <li class="footer__general">
+              <dl>
+                <dt class="footer__subtitle">Общие</dt>
+                <dd class="footer__contacts-item">
+                  <a href="tel:351282405600" class="footer__phone footer__contacts-link">+(351) 282 405 600</a>
+                </dd>
+                <dd class="footer__contacts-item">
+                  <a href="tel:351282405697" class="footer__phone footer__contacts-link">+(351) 282 405 697</a>
+                </dd>
+                <dd class="footer__contacts-item">
+                  <a href="mailto:info@autodromodoalgarve.com" class="footer__email footer__contacts-link">info@autodromodoalgarve.com</a>
+                </dd>
+              </dl>
+            </li>
 
-            <div class="footer__tickets">
-              <h3 class="footer__subtitle">Билеты</h3>
-              <a href="tel:351282405600" class="footer__phone footer__contacts-link">+(351) 282 405 600</a>
-              <a href="mailto:tickets@autodromodoalgarve.com" class="footer__email footer__contacts-link">tickets@autodromodoalgarve.com</a>
-            </div>
+            <li class="footer__tickets">
+              <dl>
+                <dt class="footer__subtitle">Билеты</dt>
+                <dd class="footer__contacts-item">
+                    <a href="tel:351282405600" class="footer__phone footer__contacts-link">+(351) 282 405 600</a>
+                </dd>
+                <dd class="footer__contacts-item">
+                  <a href="mailto:tickets@autodromodoalgarve.com" class="footer__email footer__contacts-link">tickets@autodromodoalgarve.com</a>
+                </dd>
+              </dl>
+            </li>
 
-            <div class="footer__social">
-              <a href="3" class="footer__social-link">
-                <img src="./images/YOUTUBE.svg" alt="" class="footer__social-icon">
-              </a>
-              <a href="3" class="footer__social-link">
-                <img src="./images/INST.svg" alt="" class="footer__social-icon">
-              </a>
-              <a href="3" class="footer__social-link">
-                <img src="./images/FACEBOOK.svg" alt="" class="footer__social-icon">
-              </a>
-            </div>
-          </div>
+            <li class="footer__social">
+              <ul class="footer__social-list">
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link">
+                    <img src="./images/YOUTUBE.svg" alt="" class="footer__social-icon">
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link">
+                    <img src="./images/INST.svg" alt="" class="footer__social-icon">
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link">
+                    <img src="./images/FACEBOOK.svg" alt="" class="footer__social-icon">
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
 
-          <address class="footer__address">
-            <h3 class="footer__subtitle">Адрес</h3>
-            <p class="footer__address-info">
+          <div class="footer__address">
+            <h3 class="footer__address-title">Адрес</h3>
+            <address class="footer__address-info">
               Sitio do Escampadinho, Mexilhoeira Grande, 8500-148 Portimao, Portugal
-            </p>
-            <img src="./images/map.jpg" alt="" class="footer__map">
-          </address>
+            </address>
+            <div class="footer__map" id="map"></div>
+          </div>
         </div>
 
-        <div class="footer__row-bottom">
+        <div class="footer__bottom">
           <span class="footer__author">Design by Varvara Prokopchuk</span>
           <a href="#" class="footer__logo-link">
             <img src="./images/logo.svg" alt="" class="footer__logo">
@@ -404,6 +459,12 @@
     </footer>
   </div>
 
+
+  <!-- For map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
+
+  <!-- For slider -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
   <script src="js/main.js"></script>
 </body>
