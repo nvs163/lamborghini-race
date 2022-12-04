@@ -464,3 +464,78 @@ body {
   flex-basis: 435px;
   height: 310px;
 }
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 80px;
+
+  background-color: #363636;
+  color: #fff;
+}
+
+.footer__title {
+  margin-bottom: 50px;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 87px;
+}
+
+.footer__info {
+  flex: 0 1 50%;
+  margin-right: 50px;
+}
+
+.footer__general, .footer__tickets {
+  margin-bottom: 50px;
+}
+
+.footer__subtitle {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.footer__contacts-link {
+  display: block;
+}
+
+.footer__contacts-link:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer__address {
+  font-style: normal;
+}
+.footer__address-info {
+  margin-bottom: 20px;
+}
+
+.footer__social {
+  display: flex;
+}
+
+.footer__social-link {
+  display: block;
+  max-height: 30px;
+}
+
+.footer__social-link:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer__row-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo-link {
+  display: block;
+  max-width: 50px;
+}
